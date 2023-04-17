@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Cam</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body onload="main()">
+    <canvas id="myCanvas"></canvas>
+    <div  id ="menuItems">
+        <div id="menu">
+        <div id="controls">
+            Difficulty <select id="difficulty" onchange="setDifficulty()">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+                <option value="insane">Insane</option>
+            </select>
+            <button onclick="restart()">Start</button>
+            <div>
+                <h2>Your Time - <span id="timeS" >Help Us To Solve Puzzle</span></h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="time"></div>
+</body>
+</html>
